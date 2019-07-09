@@ -10,7 +10,6 @@ dependencies:
 - numpy
 - pandas=0.24
 - jupyterlab
-- jupyter
 - matplotlib
 - seaborn
 - scipy

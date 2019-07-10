@@ -13,6 +13,7 @@ dependencies:
 - matplotlib
 - seaborn
 - scipy
+- pip
 
 - pip:
   - nbimporter

@@ -18,7 +18,7 @@ In **section 1**, l talk about the groundwork that l have done in preperation fo
 
 * Respy contributors
 * Estimagic contributors
-* Microeconometrics proffesor (Phillip Eisenhauer) & team
+* Microeconometrics professor (Phillip Eisenhauer) & team
 
 
 [![Build Status](https://travis-ci.org/HumanCapitalAnalysis/student-project-lindamaok899.svg?branch=lindamaok899)](https://travis-ci.org/HumanCapitalAnalysis/student-project-lindamaok899) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](HumanCapitalAnalysis/student-project-template/blob/master/LICENSE)

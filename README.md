@@ -1,5 +1,4 @@
-# Project Title
-
+# Replication Michael P. Keane & Kenneth I. Wopin
 This notebook replicates results from:
 
 Keane, M. P. & Wopin, W. I. (1997). [The career Decisions of Young Men.](https://www.jstor.org/stable/10.1086/262080), 

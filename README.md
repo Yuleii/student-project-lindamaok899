@@ -1,13 +1,29 @@
-# Student project template
+# Project Title
 
-This is a template for student projects.
+This notebook replicates results from:
 
-We use [GitHub Classroom](https://classroom.github.com) to administrate our student projects. So, please be sure to sign up for a [GitHub Account](http://github.com). Please use the [Jupyter Notebook](https://github.com/HumanCapitalAnalysis/student-project-template/blob/master/student_project.ipynb) to work on your project. You can look at this example on [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/HumanCapitalAnalysis/student-project-template/master?filepath=student_project.ipynb). To ensure full reproducibility of your project, be sure to maintain [Travis CI](https://travis-ci.org) as your continuous integration service.
+Keane, M. P. & Wopin, W. I. (1997). [The career Decisions of Young Men.](https://www.jstor.org/stable/10.1086/262080), 
+*Journal of Political Economy, 105(3): 473-552.*105(3): 473-552.
 
-## Frequently asked questions and answers
+For this purpose l rely on the  *respy* and *estimagic* open-source python packages. [*Respy*](https://github.com/OpenSourceEconomics/respy) is for the simulation and estimation of a prototypical finite-horizon discrete choice dynamic programming model and [*Estimagic*](https://github.com/OpenSourceEconomics/estimagic) helps to build high-quality and user friendly implementations of (structural) econometric models.
 
-* *Where can I look for publications that provide the data behind their research?* Some journals provide the data for their published articles as data supplements directly on their website. In addition, the [Replication Wiki](http://replication.uni-goettingen.de/wiki/index.php/Main_Page)  and the [Harvard Dataverse](https://dataverse.harvard.edu) compile a lot such information.
+## Project structure
 
-* *What are other useful resources for research data?* There is a tremendous amount of data available online. For example, MDRC provides a host of data files for public use [here](https://www.mdrc.org/available-public-use-files) from the evaluation of public policy initiatives.
+In **section 1**, l talk about the groundwork that l have done in preperation for replicating KW1997. I talk also about the authors' motivation and show the theoratical framework behind the paper. In keeping with the fundamentals of the course, l develop a causal framework for the discrete choice dynamic programming model. I load the data and create several plots that help us to understand what the data represents with respect to the variables within the dataset in **section 2**. It should be kept in mind whilst interpreting the graphs, that as the number of periods increase, sample attrition that plays a role. I then reproduce the main reslults in **section 3** using the *respy* and *estimagic* packages and calculate standard errors for the estimated parameters. In **section 4**, l discuss the results of the paper and my thoughts on some avenues for possible extension which inturn concludes my contribution to the replication of KW1997.
 
-[![Build Status](https://travis-ci.org/HumanCapitalAnalysis/student-project-lindamaok899.svg?branch=lindamaok899)](https://travis-ci.org/HumanCapitalAnalysis/student-project-lindamaok899) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](HumanCapitalAnalysis/student-project-template/blob/master/LICENSE)
+## Authors
+
+* **Linda Maokomatanda** 
+
+## License
+
+This project is licensed under the MIT License - see the [[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](HumanCapitalAnalysis/student-project-template/blob/master/LICENSE) file for details.
+
+## Acknowledgments
+
+* Respy contributors
+* Estimagic contributors
+* Microeconometrics course deliverers & team
+
+
+[![Build Status](https://travis-ci.org/HumanCapitalAnalysis/student-project-lindamaok899.svg?branch=master)](https://travis-ci.org/HumanCapitalAnalysis/student-project-lindamaok899) 

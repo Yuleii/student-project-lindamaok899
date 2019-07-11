@@ -26,4 +26,4 @@ This project is licensed under the MIT License - see the [[![License: MIT](https
 * Microeconometrics course deliverers & team
 
 
-[![Build Status](https://travis-ci.org/HumanCapitalAnalysis/student-project-lindamaok899.svg?branch=master)](https://travis-ci.org/HumanCapitalAnalysis/student-project-lindamaok899) 
+[![Build Status](https://travis-ci.org/HumanCapitalAnalysis/student-project-lindamaok899.svg?branch=lindamaok899)](https://travis-ci.org/HumanCapitalAnalysis/student-project-lindamaok899) 

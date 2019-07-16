@@ -3,6 +3,7 @@ name: student_project
 channels:
   - defaults
   - conda-forge
+  - janosg
 
 
 dependencies:
@@ -13,3 +14,4 @@ dependencies:
 - matplotlib
 - seaborn
 - scipy
+- estimagic=0.0.8

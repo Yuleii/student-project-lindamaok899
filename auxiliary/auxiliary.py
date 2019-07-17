@@ -13,8 +13,6 @@ def multi_column_df_display(list_dfs, cols=3):
 
     """
 
-
-
     html_table = "<table style='width:100%; border:0px'>{content}</table>"
     html_row = "<tr style='border:0px'>{content}</tr>"
     html_cell = "<td style='width:{width}%;vertical-align:top;border:0px'>{{content}}</td>"
@@ -49,6 +47,7 @@ def plot_bars(df_unindexed, ax):
         plt.tight_layout()
 
     plt.tight_layout()
+
 
 def period_pairs_rows(combined):
 
@@ -89,6 +88,7 @@ def period_pairs_cols(combined):
 
     axes.reshape(-1)[-1].remove()
     plt.tight_layout()
+
 
 def choice_dist(table):
     stacked_data = table.stack().reset_index().rename(columns={0:'value'})

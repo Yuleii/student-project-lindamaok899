@@ -24,5 +24,18 @@ In **section 1**, l give an introduction to the project, my motivation for repli
 * Estimagic contributors
 * Microeconometrics professor (Phillip Eisenhauer) & team
 
+## References
+
+- Keane, M. P. & Wopin, W. I. (1997). [The career Decisions of Young Men.](https://www.jstor.org/stable/10.1086/262080)
+ *Journal of Political Economy, 105(3): 473-552.*
+ 
+- Keane, M. P. & Wopin, W. I., & Vytlacil, E. J. (1994). 
+[The Solution and Estimation of Discrete Choice Dynamic Programming Models by Simulation and Interpolation: Monte Carlo Evidence.](https://www.jstor.org/stable/2109768)  *The Review of Economics and Statistics, 76(4): 648-672.*
+
+- Marno Verbeek. A Guide to Modern Econometrics, *Fifth Edition*.
+
+- [Statmodels implementation of the HJJH covariance matrix](https://tinyurl.com/yym5d4cw).
+
+
 
 [![Build Status](https://travis-ci.org/HumanCapitalAnalysis/student-project-lindamaok899.svg?branch=lindamaok899)](https://travis-ci.org/HumanCapitalAnalysis/student-project-lindamaok899) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](HumanCapitalAnalysis/student-project-template/blob/master/LICENSE)

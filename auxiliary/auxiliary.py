@@ -125,7 +125,7 @@ def wage_schooling(df):
     plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
      
     
-def share_of_population(respy_df, ax):
+def share_extended(respy_df, ax):
     fig, ax = plt.subplots(figsize=(16, 10))
 
     shares = respy_df.groupby("Period").Choice.value_counts().unstack()[["home", "edu", "a", "b", "mil"]].div(1000)
@@ -145,3 +145,65 @@ def share_of_population(respy_df, ax):
     ax.set_xticklabels(range(0, 40, 5), rotation="horizontal")
 
     ax.set_ylabel("Share of population");    
+    
+def share_basic(respy_basic,ax):
+    
+    fig, ax = plt.subplots(figsize=(16, 10))
+
+    shares = respy_basic.groupby("Period").Choice.value_counts().unstack()[["home", "edu", "a", "b", "mil"]].div(1000)
+
+    shares.plot.bar(stacked=False, ax=ax, width=0.8)
+
+    ax.legend(
+        labels=["Home", "School", "White-Collar", "Blue-Collar", "Military"],
+        loc="upper center",
+        bbox_to_anchor=(0.5, -0.15),
+        ncol=3
+    )
+
+    ax.set_ylim(0, 1)
+
+    ax.set_xticks(range(0, 40, 5))
+    ax.set_xticklabels(range(0, 40, 5), rotation="horizontal")
+
+    ax.set_ylabel("Share of population");
+    
+    
+def value_func_extended(respy_df, ax):
+    
+    columns = ['Value_Function_A', 'Value_Function_B', 'Value_Function_Mil', 'Value_Function_Edu', 'Value_Function_Home']
+
+    fig = plt.figure(figsize=[16,8])
+
+    for i,column in enumerate(columns):
+
+        plt.subplot(2,3,i+1)
+        if i in ['Value_Function_A', 'Value_Function_B', 'Value_Function_Mil']:
+            sns.barplot(y=respy_df[columns[i]], x='Period', data=respy_df, color=sns.color_palette()[i])
+        else:
+            sns.barplot(y=respy_df[columns[i]], x='Period', data=respy_df, color=sns.color_palette()[i])
+
+        ax.set_ylim(0, 1)
+        plt.tight_layout()
+
+    plt.tight_layout()
+    
+    
+def value_func_basic(respy_basic, ax):
+    
+    columns = ['Value_Function_A', 'Value_Function_B', 'Value_Function_Mil', 'Value_Function_Edu', 'Value_Function_Home']
+
+    fig = plt.figure(figsize=[16,8])
+
+    for i,column in enumerate(columns):
+
+        plt.subplot(2,3,i+1)
+        if i in ['Value_Function_A', 'Value_Function_B', 'Value_Function_Mil']:
+            sns.barplot(y=respy_basic[columns[i]], x='Period', data=respy_basic, color=sns.color_palette()[i])
+        else:
+            sns.barplot(y=respy_basic[columns[i]], x='Period', data=respy_basic, color=sns.color_palette()[i])
+
+        ax.set_ylim(0, 1)
+        plt.tight_layout()
+
+    plt.tight_layout()    

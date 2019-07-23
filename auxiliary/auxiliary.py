@@ -123,3 +123,25 @@ def wage_schooling(df):
     fig, ax = plt.subplots(figsize=(10, 6))
     sns.lineplot(x="Schooling", y="Wage", hue="Choice", data=df)
     plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
+     
+    
+def share_of_population(respy_df, ax):
+    fig, ax = plt.subplots(figsize=(16, 10))
+
+    shares = respy_df.groupby("Period").Choice.value_counts().unstack()[["home", "edu", "a", "b", "mil"]].div(1000)
+
+    shares.plot.bar(stacked=False, ax=ax, width=0.8)
+
+    ax.legend(
+        labels=["Home", "School", "White-Collar", "Blue-Collar", "Military"],
+        loc="upper center",
+        bbox_to_anchor=(0.5, -0.15),
+        ncol=3
+    )
+
+    ax.set_ylim(0, 1)
+
+    ax.set_xticks(range(0, 40, 5))
+    ax.set_xticklabels(range(0, 40, 5), rotation="horizontal")
+
+    ax.set_ylabel("Share of population");    

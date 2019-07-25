@@ -183,7 +183,7 @@ def value_func_extended(respy_df, ax):
         else:
             sns.barplot(y=respy_df[columns[i]], x='Period', data=respy_df, color=sns.color_palette()[i])
 
-        ax.set_ylim(0, 1)
+        ax.set_ylim(0, 0.7)
         plt.tight_layout()
 
     plt.tight_layout()
@@ -203,7 +203,7 @@ def value_func_basic(respy_basic, ax):
         else:
             sns.barplot(y=respy_basic[columns[i]], x='Period', data=respy_basic, color=sns.color_palette()[i])
 
-        ax.set_ylim(0, 1)
+        ax.set_ylim(0, 0.7)
         plt.tight_layout()
 
     plt.tight_layout()    

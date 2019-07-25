@@ -11,6 +11,7 @@ install:
   - PATH="$HOME/miniconda/bin:$PATH"
   - conda env create -f environment.yml
   - source activate student_project
+  - pip install git+https://github.com/OpenSourceEconomics/respy@6650a003f26b55a0147b32fad9e1ff0b96e6719b
 
 script:
   - travis_wait python utils/travis_runner.py

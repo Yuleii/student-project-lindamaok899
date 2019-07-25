@@ -10,3 +10,5 @@ hash -r
 conda config --set always_yes yes --set changeps1 no
 conda update -q conda
 conda info -a
+
+pip install git+https://github.com/OpenSourceEconomics/respy@6650a003f26b55a0147b32fad9e1ff0b96e6719b

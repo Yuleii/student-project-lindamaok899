@@ -10,9 +10,9 @@ dependencies:
 - python=3.6
 - numpy
 - pandas=0.24
-- jupyterlab
+- jupyterlab=0.35.4
 - matplotlib
 - seaborn
 - scipy
-- estimagic=0.0.8
+- estimagic=0.0.10
 - pip

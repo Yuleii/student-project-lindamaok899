@@ -24,7 +24,24 @@ def multi_column_df_display(list_dfs, cols=3):
     display(HTML(html_table.format(content="".join(rows))))
 
 
-
+def combine_datasets(df_unindexed):
+    
+    data = df_unindexed.copy()
+    data['next_period'] = data['Period'] + 1
+    choice_data = df_unindexed[['Identifier', 'Period', 'Choice']]
+    choice_data.rename(columns={'Choice': 'NextChoice'}, inplace=True)
+    
+    combined = pd.merge(
+        left=data, 
+        right=choice_data, 
+        left_on=['Identifier', 'next_period'],
+        right_on=['Identifier', 'Period'], 
+        how='left', 
+        suffixes=['', '_next'],
+    )
+    combined.drop(columns=['Period_next', 'next_period'], inplace=True)
+    
+    return combined
 
 def plot_bars(df_unindexed, ax):
     choice_names = ['Schooling', 'Home', 'White', 'Blue', 'Military']

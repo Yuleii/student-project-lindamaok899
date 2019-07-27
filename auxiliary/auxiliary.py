@@ -7,6 +7,28 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
+def data_preperation():
+    
+   # Ensure proper formatting of the wage variable
+    pd.options.display.float_format = '{:,.2f}'.format
+    
+    # Label and format the different columns
+    columns = ['Identifier', 'Age', 'Schooling', 'Choice', 'Wage']
+    dtype = {'Identifier': np.int, 'Age': np.int,  'Schooling': np.int,  'Choice': 'category'}
+    
+    # Read the original data file
+    df = pd.DataFrame(np.genfromtxt('data/KW_97.raw'), columns=columns).astype(dtype)
+    
+    # Label the different choice categories
+    df['Choice'].cat.categories = ['Schooling', 'Home', 'White', 'Blue', 'Military']
+    
+    # Set the index for easier interpretability
+    df['Period'] = df['Age'] - 16
+    df.set_index(['Identifier', 'Period'], inplace=True, drop=True)
+    
+    return df
+
+
 def multi_column_df_display(list_dfs, cols=3):
 
     """Print tables side by side.

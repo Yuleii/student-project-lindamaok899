@@ -246,3 +246,17 @@ def value_func_basic(respy_basic, ax):
         plt.tight_layout()
 
     plt.tight_layout()    
+    
+
+def append_se_params(jacobian_se, hessian_se, hjjh_se, params):
+    
+    var_mapping = {
+            'jacobian_se': jacobian_se,
+            'hessian_se': hessian_se,
+            'hjjh_se': hjjh_se
+            }
+    
+    for var in var_mapping:
+        params[var] = var_mapping[var]
+            
+    return params

@@ -22,7 +22,7 @@ In **section I**, l give an introduction to the project, my motivation for repli
 
 * Respy contributors
 * Estimagic contributors
-* Microeconometrics professor (Phillip Eisenhauer) & team
+* Microeconometrics professor (Philipp Eisenhauer) & team
 
 ## References
 
